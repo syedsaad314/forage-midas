@@ -1,20 +1,23 @@
-# JPMC - Midas Core Transaction System (Job Simulation)
+# JPMC Midas Core - Transaction Processing Engine 🚀
 
-This repository contains my work for the **J.P. Morgan & Co. Software Engineering Virtual Experience**. I developed and integrated backend microservices for the "Midas Core" system to handle high-volume financial transactions in my Virtual Simulation.
+### **Project Overview**
+This repository contains my implementation of the **Midas Core** system, developed during the **J.P. Morgan & Co. Software Engineering Job Simulation**. The project focuses on building a robust, scalable backend for processing high-volume financial transactions using an event-driven architecture.
 
-## 🚀 Key Features
-* **Event-Driven Processing:** Implemented an **Apache Kafka** consumer to process real-time transaction streams.
-* **REST API Development:** Created a **Spring Boot** controller to handle user balance queries via GET requests.
-* **Service Integration:** Integrated an external **Incentive API** using `RestTemplate` for cross-service communication.
-* **Data Persistence:** Managed relational data using **Spring Data JPA** and **H2 Database**.
-* **Automated Testing:** Followed **Test-Driven Development (TDD)** using Maven to ensure 100% logic accuracy.
+The core objective was to bridge the gap between real-time data ingestion (Kafka) and user-facing data access (REST APIs), ensuring data integrity and system reliability throughout the transaction lifecycle.
 
-## 🛠️ Tech Stack
-* **Language:** Java 17+
-* **Framework:** Spring Boot 3.x
+### **Key Engineering Contributions**
+* **Event-Driven Ingestion:** Engineered an **Apache Kafka Consumer** to process real-time transaction streams, ensuring low-latency data updates.
+* **RESTful Service Layer:** Designed and implemented scalable **Spring Boot REST API** endpoints to expose user balance data for external system consumption.
+* **Microservices Orchestration:** Integrated an external **Incentive API** using Spring's `RestTemplate` to handle complex, cross-service reward calculations.
+* **Persistent Data Layer:** Leveraged **Spring Data JPA** with an **H2 Database** to maintain a consistent state of user ledgers and transaction history.
+* **Reliability & Testing:** Applied **Test-Driven Development (TDD)** using Maven to validate financial logic and system edge cases (e.g., verifying balances for high-frequency users).
+
+### **Technical Stack**
+* **Language:** Java 17
+* **Framework:** Spring Boot 3.x (Web, JPA)
 * **Messaging:** Apache Kafka
-* **Database:** H2 (In-memory)
 * **Build Tool:** Maven
+* **Database:** H2 (In-memory) / SQL
 
 ## 📖 How to Run
 1. **Clone the repository:**
@@ -27,4 +30,4 @@ This repository contains my work for the **J.P. Morgan & Co. Software Engineerin
    `./mvnw test -Dtest=TaskFiveTests`
 
 ---
-*Developed as part of the J.P. Morgan Software Engineering Virtual Experience via Forage.*
+*Note: This project was completed as a simulated task for J.P. Morgan & Co. to demonstrate proficiency in enterprise Java development and distributed systems.*
