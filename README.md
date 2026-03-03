@@ -1,6 +1,6 @@
 # JPMC - Midas Core Transaction System (Job Simulation)
 
-This repository contains my work for the **J.P. Morgan & Co. Software Engineering Virtual Experience**. I developed and integrated backend microservices for the "Midas Core" system to handle high-volume financial transactions.
+This repository contains my work for the **J.P. Morgan & Co. Software Engineering Virtual Experience**. I developed and integrated backend microservices for the "Midas Core" system to handle high-volume financial transactions in my Virtual Simulation.
 
 ## 🚀 Key Features
 * **Event-Driven Processing:** Implemented an **Apache Kafka** consumer to process real-time transaction streams.
